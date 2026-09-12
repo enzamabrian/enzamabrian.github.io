@@ -8,8 +8,8 @@ const Pricing = ({ darkMode }) => {
       className={`relative min-h-screen flex items-center justify-center ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-800'} px-4 sm:px-6 py-12 sm:py-16`}
     >
       {/* Background Shapes */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-purple-400 opacity-20 rounded-full filter blur-3xl"></div>
-      <div className="absolute bottom-10 right-0 w-72 h-72 bg-indigo-400 opacity-20 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-30 left-0 w-72 h-72 bg-purple-400 opacity-20 rounded-full filter blur-3xl"></div>
+      <div className="absolute bottom-20 right-0 w-72 h-72 bg-indigo-400 opacity-20 rounded-full filter blur-3xl"></div>
 
       {/* Content Grid */}
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center z-10">

@@ -74,7 +74,7 @@ const WelcomeDialog = ({ closeDialog, darkMode }) => {
 
           <div className="flex justify-center items-center gap-6 mt-2 text-purple-600 dark:text-purple-300">
             <a
-              href="https://your-portfolio.com"
+              href="https://enzamabrian.github.io"
               target="_blank"
               rel="noopener noreferrer"
               title="Portfolio"
@@ -83,7 +83,7 @@ const WelcomeDialog = ({ closeDialog, darkMode }) => {
               <Globe size={22} />
             </a>
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/enzamabrian"
               target="_blank"
               rel="noopener noreferrer"
               title="GitHub"
@@ -91,17 +91,9 @@ const WelcomeDialog = ({ closeDialog, darkMode }) => {
             >
               <Github size={22} />
             </a>
+           
             <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="LinkedIn"
-              className="hover:scale-110 transition-transform"
-            >
-              <Linkedin size={22} />
-            </a>
-            <a
-              href="mailto:youremail@example.com"
+              href="mailto:enzamabrian000@gmail.com"
               title="Email"
               className="hover:scale-110 transition-transform"
             >

@@ -7,7 +7,7 @@ const Services = ({ darkMode }) => {
       className={`relative min-h-screen flex items-center justify-center ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-800'} px-4 sm:px-6 py-12 sm:py-16`}
     >
       {/* Background Shapes */}
-      <div className="absolute top-0 right-0 w-72 h-72 bg-indigo-400 opacity-20 rounded-full filter blur-3xl"></div>
+      <div className="absolute top-30 right-0 w-72 h-72 bg-indigo-400 opacity-20 rounded-full filter blur-3xl"></div>
       <div className="absolute bottom-10 left-0 w-72 h-72 bg-pink-400 opacity-20 rounded-full filter blur-3xl"></div>
       <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-purple-400 opacity-10 rounded-full filter blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-teal-300 opacity-15 rounded-full filter blur-3xl transform -translate-x-1/2 -translate-y-1/2"></div>
@@ -21,7 +21,7 @@ const Services = ({ darkMode }) => {
         </h2>
 
         <p className={`text-[0.8rem] sm:text-sm text-center max-w-3xl mb-10 ${darkMode ? 'text-white opacity-80' : 'text-gray-800 opacity-80'}`}>
-          I offer a range of web development services tailored to bring your ideas to life. From building full-stack applications to modernizing your website, I focus on delivering clean, efficient, and user-centric solutions.
+          I offer a range of web development services tailored to bring your ideas to life. From building full-stack applications to modernizing your website, I focus on delivering clean, efficient, and user centric solutions.
         </p>
 
         {/* Service Cards */}

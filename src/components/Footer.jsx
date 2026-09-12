@@ -1,40 +1,26 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaFacebook, FaYoutube,FaTiktok } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { SiTiktok } from 'react-icons/si'; // TikTok icon
-import { Sun, Moon } from 'lucide-react'; // lucide-react icons
-import logo from '../assets/icons/logo.png'
+import logo from '../assets/icons/logo.png';
 
-const Footer = ({ darkMode, toggleDarkMode }) => {
+const Footer = ({ darkMode }) => {
   return (
-    <footer className={`w-full pt-8 pb-6 ${darkMode ? 'bg-gray-900' : 'bg-white'} text-white shadow-lg`}>
+    <footer className={`w-full pt-8 pb-6 border-t transition-colors duration-500 ${
+      darkMode ? 'bg-dark-bg border-dark-border text-dark-heading' : 'bg-light-bg border-light-border text-light-heading'
+    }`}>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
         
-      <div className="flex items-center">
-  <img 
-    src={logo} 
-    alt="Brian Designs" 
-    className="w-auto h-10" 
-  />
-<span className={`ml-2 text-md font-bold ${darkMode ? 'text-white' : 'text-purple-700'}`}>
-  Brian Dev
-</span>
-
-</div>
-
-
-        {/* Navigation Links */}
-        <nav className="flex space-x-8 mt-6 md:mt-0 text-sm">
-          {['Home', 'About', 'Projects', 'Contact', 'Blog'].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className={`relative group transition-colors duration-300 ${darkMode ? 'text-white' : 'text-gray-800'}`}
-            >
-              {item}
-              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-purple-400 transition-all group-hover:w-full"></span>
-            </a>
-          ))}
-        </nav>
+        {/* Brand Logo & Name */}
+        <div className="flex items-center">
+          <img 
+            src={logo} 
+            alt="Brian Designs" 
+            className="w-auto h-10" 
+          />
+          <span className="ml-2 text-md font-bold text-primary">
+            Brian Dev
+          </span>
+        </div>
 
         {/* Social Media Icons */}
         <div className="flex space-x-6 mt-6 md:mt-0 text-xl">
@@ -49,7 +35,9 @@ const Footer = ({ darkMode, toggleDarkMode }) => {
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`transform hover:scale-125 transition-transform duration-300 hover:text-purple-400 ${darkMode ? 'text-white' : 'text-gray-800'}`}
+              className={`transform hover:scale-125 transition-all duration-300 hover:text-primary ${
+                darkMode ? 'text-dark-paragraph' : 'text-light-paragraph'
+              }`}
             >
               {social.icon}
             </a>
@@ -57,10 +45,10 @@ const Footer = ({ darkMode, toggleDarkMode }) => {
         </div>
       </div>
 
-      {/* Footer Text */}
-      <div className="text-center mt-6">
-        <p className={`text-xs ${darkMode ? 'text-gray-400' : 'text-gray-700'}`}>
-          © {new Date().getFullYear()} Brian Dev All rights reserved.
+      {/* Footer Copyright Text */}
+      <div className="text-center mt-6 pt-4 border-t border-transparent">
+        <p className={`text-xs ${darkMode ? 'text-dark-muted' : 'text-light-muted'}`}>
+          © {new Date().getFullYear()} Brian Dev. All rights reserved.
         </p>
       </div>
     </footer>
