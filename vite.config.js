@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/enzamabrian.github.io/',
   build: {
-    outDir: 'docs', // Changes output from dist to docs
+    outDir: 'docs',
   },
 });
